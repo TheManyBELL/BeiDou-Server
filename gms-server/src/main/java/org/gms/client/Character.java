@@ -2381,7 +2381,13 @@ public class Character extends AbstractCharacterObject {
             List<BuffStatValueHolder> mbsvhList = getAllStatups();
             for (BuffStatValueHolder mbsvh : mbsvhList) {
                 if (mbsvh.effect.isSkill()) {
-                    if (mbsvh.effect.getBuffSourceId() != Aran.COMBO_ABILITY) { // check discovered thanks to Croosade dev team
+                    if (mbsvh.effect.getBuffSourceId() != Aran.COMBO_ABILITY
+                            && mbsvh.effect.getSourceId() != Magician.MAGIC_GUARD
+                            && mbsvh.effect.getSourceId() != Rogue.DARK_SIGHT
+                            && mbsvh.effect.getSourceId() != NightLord.SHADOW_STARS
+                            && mbsvh.effect.getSourceId() != Hunter.SOUL_ARROW
+                            && mbsvh.effect.getSourceId() != Crossbowman.SOUL_ARROW
+                    ) { // check discovered thanks to Croosade dev team
                         cancelEffect(mbsvh.effect, false, mbsvh.startTime);
                     }
                 }
