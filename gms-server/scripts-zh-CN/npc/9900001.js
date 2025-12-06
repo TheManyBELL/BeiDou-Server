@@ -23,7 +23,7 @@
 /**
  * @description 拍卖行中心脚本
  */
-var OldTitle ="\t\t\t\t\t#e欢迎来到#rBeiDou#k脚本中心#n\t\t\t\t\r\n";
+var OldTitle ="\t\t\t\t\t#e欢迎来到#rMaple#k帮助中心#n\t\t\t\t\r\n";
 var status = -1;
 var i = 0;
 function start() {
@@ -47,7 +47,7 @@ function action(mode, type, selection) {
         text += "当前信用券：" + cm.getPlayer().getCashShop().getCash(4) + "\r\n";
         text += " \r\n\r\n";
         text += "#L0#新人福利#l \t #L1#每日签到#l \t #L2#在线奖励#l\r\n";
-        text += "#L3#传送自由#l \t #L4#爆率一览#l\r\n";
+        text += "#L3#传送自由#l \t #L4#爆率一览#l \t #L5#领取技能#l\r\n";
         if (cm.getPlayer().isGM()) {
             text += "\r\n\r\n";
             text += "\t\t\t\t#r=====以下内容仅GM可见=====\r\n";
@@ -81,6 +81,9 @@ function doSelect(selection) {
             break;
         case 4:
             openNpc("当前地图掉落");
+            break;
+        case 5:
+            openNpc("领取技能");  // @flona
             break;
         // GM功能
         case 61:
