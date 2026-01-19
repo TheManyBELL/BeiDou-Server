@@ -2391,7 +2391,16 @@ public class Character extends AbstractCharacterObject {
             List<BuffStatValueHolder> mbsvhList = getAllStatups();
             for (BuffStatValueHolder mbsvh : mbsvhList) {
                 if (mbsvh.effect.isSkill()) {
-                    if (mbsvh.effect.getBuffSourceId() != Aran.COMBO_ABILITY) { // check discovered thanks to Croosade dev team
+                    if (mbsvh.effect.getBuffSourceId() != Aran.COMBO_ABILITY // 战神连击
+                            && mbsvh.effect.getSourceId() != Magician.MAGIC_GUARD // 魔法盾
+                            && mbsvh.effect.getSourceId() != Rogue.DARK_SIGHT // 隐身
+                            && mbsvh.effect.getSourceId() != NightLord.SHADOW_STARS // 隐士无形镖
+                            && mbsvh.effect.getSourceId() != Hunter.SOUL_ARROW // 猎人无形箭
+                            && mbsvh.effect.getSourceId() != Crossbowman.SOUL_ARROW // 弩手无形弩
+                            && mbsvh.effect.getSourceId() != Marauder.TRANSFORMATION // 斗士 超人变身
+                            && mbsvh.effect.getSourceId() != ChiefBandit.MESO_GUARD // 金钱盾
+                            && mbsvh.effect.getSourceId() != Legend.ECHO_OF_HERO // 勇士的回声
+                    ) { // 关键技能不可驱散 @flona
                         cancelEffect(mbsvh.effect, false, mbsvh.startTime);
                     }
                 }
