@@ -1137,7 +1137,7 @@ public class ItemInformationProvider {
                     if (!GameConfig.getServerBoolean("use_perfect_scrolling") && !usingWhiteScroll && !ItemConstants.isCleanSlate(scrollId) && !assertGM && !ItemConstants.isModifierScroll(scrollId)) {
                         nEquip.setUpgradeSlots((byte) (nEquip.getUpgradeSlots() - 1)); // 减少一个升级插槽
                     }
-                    if (Randomizer.nextInt(100) < stats.get("cursed")) {
+                    if (!ItemConstants.isCleanSlate(scrollId) && Randomizer.nextInt(100) < stats.get("cursed")) { // CleanSlate 失败时不会损坏装备 @flona
                         return null; // 卷轴诅咒装备，返回 null 表示装备被摧毁
                     }
                 }
