@@ -207,7 +207,7 @@ values ('world', '0', 'java.lang.Integer', 'flag', '0', '0=普通大区，1=活�
        ('server', 'Game Mechanics', 'java.lang.Boolean', 'change_channel_force_return', 'false', '切换频道是否回到强制返回地图(Change channel will return the force_return_map, just like login again.)'),
        ('server', 'Game Mechanics', 'java.lang.Integer', 'mob_respawn_rate', '1', '怪物生成倍率(mob respawn rate)'),
        ('server', 'Game Mechanics', 'java.lang.Float', 'boss_respawn_mob_time_rate', '1.0', 'BOSS刷新时间速率(boss respawn time rate)'),
-       ('server', 'Game Mechanics', 'java.lang.Short', 'item_slot_max', '0', '消耗栏和其他栏的物品最大堆叠，0为默认取wz定义的堆叠数量(Max item slots in Consume and Etc)'),
+       ('server', 'Game Mechanics', 'java.lang.Short', 'item_slot_max', '1000', '消耗栏和其他栏的物品最大堆叠，0为默认取wz定义的堆叠数量(Max item slots in Consume and Etc)'),
        ('server', 'Game Mechanics', 'java.lang.Integer', 'level_up_ap_gain', '5', '升级获得的属性点，如果开启新手不允许分配属性点，则新手不受此影响(gain ap per level)'),
        ('server', 'Game Mechanics', 'java.lang.Integer', 'level_up_sp_gain', '3', '升级获得的技能点，新手不受此影响(gain sp per level)'),
        ('server', 'Game Mechanics', 'java.lang.Integer', 'trade_limit_meso_under_level', '15', '小于等于该等级的角色每天允许交易的金币将有金额限制，值为-1时则不限制等级(Characters below or equal to this level will have a limit on the amount of coins they can trade per day, while a value of -1 will not limit their level)'),
