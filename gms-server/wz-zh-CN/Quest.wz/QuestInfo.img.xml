@@ -22819,6 +22819,15 @@
         <int name="autoPreComplete" value="0"/>
         <string name="type" value="[北斗冒险岛]"/>
     </imgdir>
+    <imgdir name="30006">
+        <string name="name" value="[每日任务]消灭污染怪物"/>
+        <string name="0" value="黑魔法师的气息不断污染怪物，冒险者，请帮助我们消灭10只任意怪物"/>
+        <string name="1" value="需要消灭任意怪物10只。"/>
+        <string name="2" value="成功消灭了10只怪物，获得了10点HP上限奖励。"/>
+        <int name="area" value="30"/>
+        <int name="autoStart" value="1"/>
+        <int name="autoPreComplete" value="1"/>
+    </imgdir>
     <imgdir name="4100">
         <string name="0" value="最近#b#p9310010##k家家畜变得很暴躁，农活也变得很困难。去找找他吧。"/>
         <string name="1" value="击退暴躁的家畜之后，去找#b#p9310010##k。\n\n#t4000189# #b#c4000189# / 100 #k \n#t4000190# #b#c4000190# / 100 #k"/>

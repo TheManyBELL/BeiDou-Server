@@ -76616,6 +76616,26 @@
             </imgdir>
         </imgdir>
     </imgdir>
+    <imgdir name="30006">
+        <imgdir name="0">
+            <string name="startscript" value="q30006s"/>
+            <int name="npc" value="9010000"/>
+            <int name="lvmin" value="10"/>
+            <int name="lvmax" value="250"/>
+            <int name="interval" value="1440"/>
+            <int name="normalAutoStart" value="1"/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="endscript" value="q30006e"/>
+            <int name="npc" value="9010000"/>
+            <imgdir name="mob">
+                <imgdir name="0">
+                    <int name="id" value="0"/>
+                    <int name="count" value="10"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
     <imgdir name="4100">
         <imgdir name="0">
             <int name="lvmin" value="45"/>

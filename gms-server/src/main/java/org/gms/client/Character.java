@@ -6564,6 +6564,15 @@ public class Character extends AbstractCharacterObject {
                             announceUpdateQuest(DelayedQuestUpdate.UPDATE, qs, true);
                         }
                     }
+                    // 支持任意怪物：如果任务需要mobID=0，则对所有怪物击杀都更新progress(0)
+                    if (qs.getQuest().getMobAmountNeeded(0) > 0) {
+                        if (qs.progress(0)) {
+                            announceUpdateQuest(DelayedQuestUpdate.UPDATE, qs, false);
+                            if (qs.getInfoNumber() > 0) {
+                                announceUpdateQuest(DelayedQuestUpdate.UPDATE, qs, true);
+                            }
+                        }
+                    }
                 }
             }
         } catch (Exception e) {
