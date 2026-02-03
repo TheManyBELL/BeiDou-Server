@@ -32,8 +32,8 @@ function action(mode, type, selection)
 			else
 			{
 			    cm.saveOrUpdateCharacterExtendValue("每日签到", "TRUE",true);
-			    cm.sendOk("签到成功");
-				cm.gainItem(2430033,1);
+                cm.getPlayer().getCashShop().gainCash(1, 10000);
+                cm.sendOk("签到成功！您已获得奖励：10,000点券");
 			    cm.dispose();				
 			}
 	    }

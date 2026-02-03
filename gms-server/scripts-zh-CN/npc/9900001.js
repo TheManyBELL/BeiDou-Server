@@ -43,11 +43,11 @@ function action(mode, type, selection) {
     if (status === 0) {
 		let text = OldTitle;
         text += "当前点券：" + cm.getPlayer().getCashShop().getCash(1) + "\r\n";
-        text += "当前抵用券：" + cm.getPlayer().getCashShop().getCash(2) + "\r\n";
-        text += "当前信用券：" + cm.getPlayer().getCashShop().getCash(4) + "\r\n";
+        // text += "当前抵用券：" + cm.getPlayer().getCashShop().getCash(2) + "\r\n";
+        // text += "当前信用券：" + cm.getPlayer().getCashShop().getCash(4) + "\r\n";
         text += " \r\n\r\n";
-        text += "#L0#新人福利#l \t #L1#每日签到#l \t #L2#在线奖励#l\r\n";
-        text += "#L3#传送自由#l \t #L4#爆率一览#l\r\n";
+        text += "#L0#新人福利#l \t #L1#每日签到#l\r\n";
+        text += "#L2#传送自由#l \t #L3#爆率一览#l\r\n";
         if (cm.getPlayer().isGM()) {
             text += "\r\n\r\n";
             text += "\t\t\t\t#r=====以下内容仅GM可见=====\r\n";
@@ -73,13 +73,10 @@ function doSelect(selection) {
             openNpc("每日签到");
             break;
         case 2:
-            openNpc("在线奖励_nextlevel");
-            break;
-        case 3:
             cm.getPlayer().saveLocation("FREE_MARKET");
             cm.warp(910000000, "out00");
             break;
-        case 4:
+        case 3:
             openNpc("当前地图掉落");
             break;
         // GM功能
