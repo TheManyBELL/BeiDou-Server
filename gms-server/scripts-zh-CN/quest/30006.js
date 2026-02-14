@@ -1,7 +1,7 @@
 /*
 每日任务：消灭污染怪物
 任务ID: 30006
-描述: 每日24:00刷新，击杀任意10个怪物，奖励10点HP
+描述: 每日24:00刷新，击杀任意200个怪物，奖励500点HP
 */
 
 var status = -1; 
@@ -14,7 +14,7 @@ function start(mode, type, selection)
 	    if (status == 0)
 	    {
 			//第一层对话
-			qm.sendAcceptDecline("黑魔法师的气息不断污染怪物，冒险者，请帮助我们消灭10只任意怪物");
+			qm.sendAcceptDecline("黑魔法师的气息不断污染怪物，冒险者，请帮助我们消灭200只任意怪物");
 	    }
 		else if (status == 1)
 		{
@@ -28,7 +28,7 @@ function start(mode, type, selection)
 			{
 				// 接受任务
 				qm.forceStartQuest();
-				qm.sendOk("太好了！请消灭任意10只怪物，完成后回来找我领取奖励。");
+				qm.sendOk("太好了！请消灭任意200只怪物，完成后回来找我领取奖励。");
 				qm.dispose();
 			}
 		}
@@ -44,9 +44,9 @@ function end(mode, type, selection)
 			//第一层对话
 			var player = qm.getPlayer();
 			if (player != null) {
-				player.addMaxHP(10);
+				player.addMaxHP(500);
 			}
-            qm.sendOk("太好了！你成功消灭了10只怪物，这是给你的奖励：增加10点HP上限！");		
+            qm.sendOk("太好了！你成功消灭了200只怪物，这是给你的奖励：增加500点HP上限！");		
 			qm.forceCompleteQuest();
 	    }
 		else
