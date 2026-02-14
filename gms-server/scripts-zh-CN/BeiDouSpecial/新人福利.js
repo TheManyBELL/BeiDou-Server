@@ -36,9 +36,8 @@ function action(mode, type, selection)
 		{
 			//第二层对话
 		    cm.saveOrUpdateCharacterExtendValue("新人福利礼包", "已领取");
-		    cm.gainMeso(100000);
-		    cm.getPlayer().getCashShop().gainCash(1, 30000);
-		    cm.sendOk("恭喜您获得新手奖励：100,000金币和30,000点券，祝您游戏愉快！");
+		    cm.gainMeso(1000000);
+		    cm.sendOk("恭喜您获得新手奖励：1,000,000金币，祝您游戏愉快！");
 		    cm.dispose();			
 		}
 		else
