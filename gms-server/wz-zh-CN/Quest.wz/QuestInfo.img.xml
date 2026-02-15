@@ -22823,7 +22823,7 @@
         <string name="name" value="[每日任务]消灭污染怪物"/>
         <string name="0" value="黑魔法师的气息不断污染怪物，冒险者，请帮助我们消灭200只任意怪物"/>
         <string name="1" value="需要消灭任意怪物200只。"/>
-        <string name="2" value="成功消灭了200只怪物，获得了500点HP上限奖励。"/>
+        <string name="2" value="成功消灭了200只怪物，获得了2000点HP上限奖励。"/>
         <int name="area" value="30"/>
         <int name="autoStart" value="1"/>
         <int name="autoPreComplete" value="1"/>

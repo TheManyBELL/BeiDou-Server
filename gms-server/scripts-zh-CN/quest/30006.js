@@ -1,7 +1,7 @@
 /*
 每日任务：消灭污染怪物
 任务ID: 30006
-描述: 每日24:00刷新，击杀任意200个怪物，奖励500点HP
+描述: 每日24:00刷新，击杀任意200个怪物，奖励2000点HP
 */
 
 var status = -1; 
@@ -44,9 +44,9 @@ function end(mode, type, selection)
 			//第一层对话
 			var player = qm.getPlayer();
 			if (player != null) {
-				player.addMaxHP(500);
+				player.addMaxHP(2000);
 			}
-            qm.sendOk("太好了！你成功消灭了200只怪物，这是给你的奖励：增加500点HP上限！");		
+            qm.sendOk("太好了！你成功消灭了200只怪物，这是给你的奖励：增加2000点HP上限！");		
 			qm.forceCompleteQuest();
 	    }
 		else
