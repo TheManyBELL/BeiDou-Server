@@ -17,10 +17,12 @@
     <int name="reqLUK" value="0"/>
     <int name="incPDD" value="30"/>
     <int name="incMDD" value="15"/>
-    <int name="incSTR" value="2"/>
-    <int name="incDEX" value="2"/>
-    <int name="incINT" value="2"/>
-    <int name="incLUK" value="2"/>
+    <int name="incSTR" value="20"/>
+    <int name="incDEX" value="20"/>
+    <int name="incINT" value="20"/>
+    <int name="incLUK" value="20"/>
+    <int name="incPAD" value="20"/>
+    <int name="incMAD" value="60"/>
     <int name="incMHP" value="10"/>
     <int name="incEVA" value="10"/>
     <int name="tuc" value="9"/>

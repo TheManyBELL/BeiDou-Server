@@ -276,7 +276,7 @@
     <int name="reqDEX" value="285"/>
     <int name="reqINT" value="0"/>
     <int name="reqLUK" value="0"/>
-    <int name="incPAD" value="100"/>
+    <int name="incPAD" value="130"/>
     <int name="incSpeed" value="11"/>
     <int name="knockback" value="70"/>
     <int name="tuc" value="7"/>
